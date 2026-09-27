@@ -205,9 +205,9 @@ h1, h2, h3 { font-family: "Space Grotesk", sans-serif; }
 
 .design-image {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: auto;
+  display: block;
   border-radius: 14px;
-  overflow: hidden;
 }
 
 .design-info { padding: 15px 3px; }
