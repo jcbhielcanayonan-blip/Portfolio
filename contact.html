@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | JC Bhiel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html">JC<span>.</span></a>
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="designs.html">Designs</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a class="nav-contact active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">CONTACT</p>
+      <h1>Let's work<br><span>together.</span></h1>
+      <p>Have a design project? Send me a message.</p>
+    </section>
+
+    <section class="contact-layout section">
+      <div class="contact-info">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2>Have a project in mind?</h2>
+        <p>Replace the details below with your actual contact information and social links.</p>
+
+        <div class="contact-list">
+          <a href="mailto:your@email.com"><strong>Email</strong><span>your@email.com</span></a>
+          <a href="#"><strong>Facebook</strong><span>Your Facebook</span></a>
+          <a href="#"><strong>Instagram</strong><span>@yourusername</span></a>
+          <a href="#"><strong>GitHub</strong><span>Your GitHub</span></a>
+        </div>
+      </div>
+
+      <form class="contact-form" onsubmit="return handleContactForm(event)">
+        <label>Name<input type="text" id="name" required placeholder="Your name"></label>
+        <label>Email<input type="email" id="email" required placeholder="you@example.com"></label>
+        <label>Project type
+          <select id="project">
+            <option>Pubmat</option>
+            <option>Poster</option>
+            <option>Social Media Design</option>
+            <option>Logo / Branding</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>Message<textarea id="message" required rows="6" placeholder="Tell me about your project..."></textarea></label>
+        <button class="btn primary" type="submit">Send Message</button>
+        <p class="form-note">The button currently opens your email app. Change the email address in <code>script.js</code>.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 JC Bhiel. All rights reserved.</p>
+    <p>Graphic Design Portfolio</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
