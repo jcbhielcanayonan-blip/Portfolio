@@ -93,6 +93,7 @@ nav a.active {
   color: white;
   border: 0;
   font-size: 25px;
+  cursor: pointer;
 }
 
 /* =========================
@@ -174,7 +175,7 @@ h3 {
 ========================= */
 
 .hero-showcase {
-  height: 500px;
+  height: 550px;
   position: relative;
   display: flex;
   align-items: center;
@@ -187,34 +188,38 @@ h3 {
 }
 
 .shape-one {
-  width: 220px;
-  height: 220px;
+  width: 300px;
+  height: 300px;
   background: var(--accent-2);
   opacity: .35;
-  top: 100px;
-  left: 100px;
-  filter: blur(70px);
+  top: 80px;
+  left: 80px;
+  filter: blur(80px);
 }
 
 .shape-two {
-  width: 180px;
-  height: 180px;
+  width: 260px;
+  height: 260px;
   background: #ff4dc4;
   opacity: .2;
-  bottom: 60px;
-  right: 40px;
-  filter: blur(65px);
+  bottom: 50px;
+  right: 20px;
+  filter: blur(80px);
 }
 
 .showcase-card {
   position: absolute;
-  width: 170px;
-  height: 230px;
-  padding: 5px;
-  border: 1px solid #33333f;
-  border-radius: 8px;
+
+  width: 230px;
+  height: 310px;
+
+  padding: 6px;
+  border: 2px solid #33333f;
+  border-radius: 10px;
+
   background: #22222d;
-  box-shadow: 0 20px 50px rgba(0,0,0,.45);
+  box-shadow: 0 25px 60px rgba(0,0,0,.5);
+
   overflow: hidden;
 }
 
@@ -223,28 +228,32 @@ h3 {
   height: 100%;
   object-fit: contain;
   display: block;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .card-a {
-  top: 80px;
-  left: 80px;
+  top: 55px;
+  left: 45px;
   transform: rotate(-8deg);
   z-index: 1;
 }
 
 .card-b {
-  top: 120px;
-  right: 70px;
+  top: 85px;
+  right: 35px;
   transform: rotate(8deg);
   z-index: 2;
 }
 
 .card-c {
-  bottom: 35px;
-  left: 190px;
+  bottom: 20px;
+  left: 155px;
   transform: rotate(2deg);
   z-index: 3;
+}
+
+.showcase-card:hover {
+  z-index: 10;
 }
 
 /* =========================
@@ -257,8 +266,16 @@ h3 {
   justify-content: center;
   text-align: center;
   background:
-    radial-gradient(circle at 20% 20%, rgba(180,140,255,.4), transparent 30%),
-    radial-gradient(circle at 80% 70%, rgba(255,77,196,.25), transparent 30%),
+    radial-gradient(
+      circle at 20% 20%,
+      rgba(180,140,255,.4),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(255,77,196,.25),
+      transparent 30%
+    ),
     #20202a;
   color: rgba(255,255,255,.5);
   font-family: "Space Grotesk", sans-serif;
@@ -465,7 +482,11 @@ footer {
   height: 100%;
   border-radius: 20px;
   background:
-    radial-gradient(circle at 25% 25%, rgba(180,140,255,.5), transparent 30%),
+    radial-gradient(
+      circle at 25% 25%,
+      rgba(180,140,255,.5),
+      transparent 30%
+    ),
     linear-gradient(145deg, #29293a, #121218);
   display: flex;
   align-items: center;
@@ -613,7 +634,24 @@ footer {
   }
 
   .hero-showcase {
-    height: 430px;
+    height: 500px;
+  }
+
+  .showcase-card {
+    width: 210px;
+    height: 285px;
+  }
+
+  .card-a {
+    left: 80px;
+  }
+
+  .card-b {
+    right: 60px;
+  }
+
+  .card-c {
+    left: 180px;
   }
 
   .design-grid {
@@ -679,26 +717,29 @@ footer {
   }
 
   .hero-showcase {
-    height: 380px;
+    height: 430px;
     transform: scale(.85);
     transform-origin: top center;
-    margin-bottom: -50px;
+    margin-bottom: -40px;
   }
 
   .showcase-card {
-    width: 140px;
-    height: 190px;
+    width: 160px;
+    height: 215px;
   }
 
   .card-a {
-    left: 40px;
+    top: 60px;
+    left: 20px;
   }
 
   .card-b {
-    right: 35px;
+    top: 90px;
+    right: 15px;
   }
 
   .card-c {
-    left: 130px;
+    bottom: 25px;
+    left: 105px;
   }
 }
